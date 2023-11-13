@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery App</title>
+  <link rel="stylesheet" href="C:\Users\Ethan\Desktop\threedelivery\Main\styles.css">
+</head>
+<body>
+  <header>
+    <h1>Delivery App</h1>
+  </header>
+
+  <div id="app-container">
+    <label for="item">Select an item:</label>
+    <select id="item" onchange="updateImage()">
+      <option value="pizza" data-image="C:\Users\Ethan\Desktop\threedelivery\pizza.jpg">Pizza</option>
+      <option value="burger" data-image="C:\Users\Ethan\Desktop\threedelivery\burger.jpg">Burger</option>
+      <option value="sushi" data-image="C:\Users\Ethan\Desktop\threedelivery\sushi.jpg">Sushi</option>
+    </select>
+
+    <div id="item-image-container">
+      <img id="item-image" src="" alt="Selected Item">
+    </div>
+
+    <label for="quantity">Quantity:</label>
+    <select id="quantity">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <button onclick="placeOrder()">Place Order</button>
+
+    <div id="order-details">
+      <h2>Order Details</h2>
+      <p id="selected-item"></p>
+      <p id="selected-quantity"></p>
+      <button onclick="confirmOrder()">Confirm Order</button>
+    </div>
+  </div>
+
+  <script src="C:\Users\Ethan\Desktop\threedelivery\Main\script.js"></script>
+</body>
+</html>
